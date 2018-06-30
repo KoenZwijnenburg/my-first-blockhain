@@ -19,6 +19,12 @@ class Block {
     static genesis() {
         return new this('Genesis time', '------', 'f1r570h45h', []);
     }
+
+    static mineBlock(lastBlock, data) {
+        const timestamp = Date.now();
+        const lastHash = lastBlock.hash;
+        const hash = 'todo-hash';
+    }
 }
 
 module.exports = Block;
