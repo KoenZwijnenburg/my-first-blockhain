@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll",
     "dev-test": "nodemon dev-test",
-    "start": "node ./app/app"
+    "start": "node ./app/app",
+    "second-server": "HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws:localhost:5001 npm run start"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "crypto-js": "^3.1.9-1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "ws": "^5.2.1"
   }
 }
